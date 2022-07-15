@@ -128,11 +128,15 @@ letter-spacing: 0.02em;
     margin-right: 50px;
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus {
-    color: var(--accent-color);
+.envelope-icon {
+  fill: #757575;
+    margin-right: 10px;
 }
 
+.smartphone-icon {
+  fill: #757575;
+    margin-right: 10px;
+}
 /* Contacts */
 
 .contacts { 
@@ -144,8 +148,13 @@ margin-left: auto;
 margin-right: 50px;
 }
 
+.envelope-icon:hover,
+.envelope-icon:focus {
+  fill: var(--accent-color);
+}
+
 .contacts-link {
-display: block;
+display: block
 padding-top: 32px;
 padding-bottom: 32px;
 
@@ -170,7 +179,6 @@ margin-left: auto;
 margin-right: auto;
 padding-top: 200px;
 padding-bottom: 200px;
-outline: 1px solid yellow;
 background-image: linear-gradient(
   to right,
 rgba(47, 48, 58, 0.4),
@@ -227,6 +235,19 @@ letter-spacing: 0.06em;
 flex-basis: 270px;
 }
 
+.advantage-section .pic-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+}
+
+.advantage-section .pic-icon {
+
+}
+
 .advantage-section .item:not(:last-child) {
 margin-right: 30px;
 }
@@ -237,6 +258,7 @@ display: flex;
 
 .advantage-section .list-item-title {
 padding-left: 0;
+margin-top: 30px;
 margin-bottom: 10px;
 
 color: var(--title-text-color);
@@ -317,6 +339,8 @@ line-height: 1.19;
 }
 
 .team-section .list-title-text {
+margin-bottom: 16px; 
+
 font-size: 16px;
 line-height: 1.19;
 }
@@ -334,6 +358,36 @@ background-color: #FFFFFF;
 
 .team-section .item {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.team-section .icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.team-section .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.social-icon {
+  fill: #AFB1B8;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill:#FFFFFF;
 }
 
 /* Clients */
@@ -360,11 +414,34 @@ width: 390px;
 }
 
 .clients-section .item {
+ 
+ 
+}
+
+.clients-section .clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
-  border-radius: 4px;
+    border-radius: 4px;
 }
+
+.clients-section .logo-icon {
+  fill: #AFB1B8;
+}
+
+.clients-section .clients-link:hover,
+.clients-section .clients-link:focus {
+border: 1px solid var(--accent-color);
+}
+
+.clients-section .clients-link:hover .logo-icon,
+.clients-section .clients-link:focus .logo-icon {
+  fill: var(--accent-color);
+}
+
   /* Footer */
 
 .footer {
@@ -443,6 +520,25 @@ color: #FFFFFF;
   display: flex;
   gap: 10px;
 }
+.join-section .join-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.join-icon {
+  fill:#FFFFFF;
+}
+
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent-color);
+}
+
 
 .join-section .item {
   width: 44px;
