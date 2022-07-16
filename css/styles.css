@@ -128,15 +128,11 @@ letter-spacing: 0.02em;
     margin-right: 50px;
 }
 
-.envelope-icon {
-  fill: #757575;
-    margin-right: 10px;
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--accent-color);
 }
 
-.smartphone-icon {
-  fill: #757575;
-    margin-right: 10px;
-}
 /* Contacts */
 
 .contacts { 
@@ -148,8 +144,23 @@ margin-left: auto;
 margin-right: 50px;
 }
 
-.envelope-icon:hover,
-.envelope-icon:focus {
+.envelope-icon {
+  fill: #757575;
+  margin-right: 10px;
+}
+
+.smartphone-icon {
+  fill: #757575;
+  margin-right: 10px;
+}
+
+.contacts-link:hover .envelope-icon,
+.contacts-link:focus .envelope-icon {
+  fill: var(--accent-color);
+}
+
+.contacts-link:hover .smartphone-icon,
+.contacts-link:focus .smartphone-icon {
   fill: var(--accent-color);
 }
 
@@ -165,8 +176,8 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 }
 
-.contacts-link:hover:hover,
-.contacts-link:focus:focus {
+.contacts-link:hover,
+.contacts-link:focus  {
 color: var(--accent-color);
 }
 
@@ -242,10 +253,6 @@ flex-basis: 270px;
   width: 270px;
   height: 120px;
   background-color: #F5F4FA;
-}
-
-.advantage-section .pic-icon {
-
 }
 
 .advantage-section .item:not(:last-child) {
@@ -364,7 +371,7 @@ background-color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 22px;
+  gap: 10px;
 }
 
 .team-section .social-link {
@@ -413,11 +420,6 @@ width: 390px;
   justify-content: space-between;
 }
 
-.clients-section .item {
- 
- 
-}
-
 .clients-section .clients-link {
   display: flex;
   align-items: center;
@@ -457,6 +459,7 @@ margin-bottom: 20px;
 
 .footer-box {
   display: flex;
+  align-items: baseline;
 }
 
 .address-box {
